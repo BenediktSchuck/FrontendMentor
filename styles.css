@@ -1,0 +1,87 @@
+*,
+*::before,
+*::after
+{
+    padding:0;
+    margin:0;
+    box-sizing:border-box;
+    font-family:sans-serif;
+    color:white;
+}
+
+a
+{
+    text-decoration: none;
+}
+
+body
+{
+    background-color: hsl(0, 0%, 8%);
+}
+
+.outer-body
+{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    height:100vh;
+}
+
+.card
+{
+    background-color:hsl(0, 0%, 12%);
+    padding:25px;
+    border-radius:20px;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    gap:20px
+}
+
+.profile-icon
+{
+    background-image:url(assets/Ryan.jpg);
+    background-size:cover;
+    background-position:center;
+    height:100px;
+    width:100px;
+    border-radius:100%;
+}
+
+.description-text
+{
+    display:flex;
+    flex-direction:column;
+    gap:35px;
+    text-align: center;
+}
+
+.location-text
+{
+    color: hsl(75, 94%, 57%);
+}
+
+.social-links
+{
+    display:flex;
+    flex-direction:column;
+    gap:10px;
+    width:100%;
+    justify-content:space-evenly;
+}
+
+.social-links div
+{
+    background-color:hsl(0, 0%, 20%);
+    text-align: center;
+    padding:15px;
+    border-radius:10px;
+}
+
+@media all and (min-width:1440px)
+{
+    .card
+    {
+        width: 400px
+    }
+}
